@@ -96,14 +96,14 @@
 }
 
 .link-btn-primary {
-  background: var(--color-text);
-  color: var(--color-bg);
-  border-color: var(--color-text);
+  background: linear-gradient(135deg, #a855f7, #22d3ee);
+  color: #ffffff;
+  border: none;
 }
 
 .link-btn-primary:hover {
-  opacity: 0.8;
-  color: var(--color-bg);
+  opacity: 0.85;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {

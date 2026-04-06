@@ -11,24 +11,20 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Wire up to your backend/email service here
     setSent(true)
   }
 
   return (
-    <div className="page">
-      <section className="hero">
+    <div className="contact-page">
+
+      <section className="contact-hero">
         <div className="badge">Let's talk</div>
         <h1>Got a project<br /><span>in mind?</span></h1>
         <p>We're a two-person team — so when you reach out, you talk directly to the people building your product.</p>
-        <div className="actions">
-          <a href="mailto:hello@aestack.dev" className="btnPrimary">hello@aestack.dev</a>
-        </div>
       </section>
 
-      <section className="section">
-        <div className="sectionLabel">Send a message</div>
-
+      <section className="contact-section">
+        <div className="contact-sectionLabel">Send a message</div>
         {sent ? (
           <div className="successMessage">
             <span className="successIcon">✓</span>
@@ -74,27 +70,28 @@ export default function Contact() {
                 required
               />
             </div>
-            <button type="submit" className="btnPrimary">Send message</button>
+            <button type="submit" className="contact-btnPrimary">Send message →</button>
           </form>
         )}
       </section>
 
-      <section className="section">
-        <div className="sectionLabel">Other ways to reach us</div>
-        <div className="pillars">
+      <section className="contact-section">
+        <div className="contact-sectionLabel">Other ways to reach us</div>
+        <div className="contact-pillars">
           {[
             { label: 'Email', value: 'hello@aestack.dev' },
             { label: 'GitHub', value: 'github.com/aestack' },
             { label: 'Twitter / X', value: '@aestack' },
             { label: 'LinkedIn', value: 'AEstack' },
           ].map(({ label, value }) => (
-            <div key={label} className="pillar">
-              <span className="pillarLabel">{label}</span>
-              <span className="pillarValue">{value}</span>
+            <div key={label} className="contact-pillar">
+              <span className="contact-pillarLabel">{label}</span>
+              <span className="contact-pillarValue">{value}</span>
             </div>
           ))}
         </div>
       </section>
+
     </div>
   )
 }
