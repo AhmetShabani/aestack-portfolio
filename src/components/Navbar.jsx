@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import '/src/assets/css/navbar.css'
-import logo from '../assets/img/favicon.PNG'
+import logo from '../assets/img/favicon.png'
 
 const links = [
   { to: '/projects', label: 'Projects' },
