@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import '/src/assets/css/navbar.css'
+import logo from '../assets/img/favicon.PNG'
 
 const links = [
   { to: '/projects', label: 'Projects' },
@@ -13,6 +14,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="logo">
+        <img src={logo} alt="AEstack logo" />
         AEstack<span>.dev</span>
       </Link>
       <div className="links">
