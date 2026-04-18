@@ -1,18 +1,20 @@
 import '/src/assets/css/projects.css'
+import dreamfilms from '../assets/img/dreamfilms.png'
+import purest from '../assets/img/purest.png'
 
 const projects = [
   {
-    title: 'Project Alpha',
-    description: 'A full-stack web application built with React and Node.js. Features real-time data, authentication, and a clean dashboard interface.',
-    tags: ['React', 'Node.js', 'PostgreSQL'],
-    image: 'https://placehold.co/600x400/13131a/a855f7?text=Project+Alpha',
-    demo: '#',
+    title: 'DreamFilms',
+    description: 'A modern film & video production landing page built with Vite + React and React Bootstrap. Features a dark cinematic theme, equipment rental system with email integration, portfolio gallery, and a smooth loading screen animation.',
+    tags: ['React', 'Vite', 'React Bootstrap'],
+    image: dreamfilms,
+    demo: 'https://www.dreamfilms-ks.com',
   },
-  {
-    title: 'Project Beta',
-    description: 'A modern dashboard for data visualization and analytics. Built with Next.js and Tailwind, optimized for performance and scalability.',
-    tags: ['Next.js', 'Tailwind', 'Prisma'],
-    image: 'https://placehold.co/600x400/13131a/22d3ee?text=Project+Beta',
+    {
+    title: 'PurEst',
+    description: 'A multilingual landing page for an eco-friendly cleaning service. Features a French/English language switcher, smooth animations, and a booking form — built with a fully custom CSS design system.',
+    tags: ['React', 'Vite', 'React Bootstrap', 'CSS Modules'],
+    image: purest,
     demo: '#',
   },
   {
@@ -44,7 +46,7 @@ export default function Projects() {
               <h2 className="project-title">{project.title}</h2>
               <p className="project-desc">{project.description}</p>
               <a href={project.demo} className="demo-btn" target="_blank" rel="noreferrer">
-                Live Demo →
+                View Site →
               </a>
             </div>
             <div className="project-image">

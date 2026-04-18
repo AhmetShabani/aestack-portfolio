@@ -16,15 +16,15 @@ const stack = [
 
 const featured = [
   {
-    title: 'Project Alpha',
-    description: 'A full-stack web application with real-time data, authentication, and a clean dashboard.',
-    tags: ['React', 'Node.js', 'PostgreSQL'],
-    demo: '#',
+    title: 'DreamFilms',
+    description: 'A cinematic landing page with equipment rental, portfolio gallery, and email integration.',
+    tags: ['React', 'Vite', 'React Bootstrap'],
+    demo: 'https://www.dreamfilms-ks.com',
   },
   {
-    title: 'Project Beta',
-    description: 'A modern analytics dashboard built for performance and scalability.',
-    tags: ['Next.js', 'Tailwind', 'Prisma'],
+    title: 'PurEst',
+    description: 'A multilingual landing page for an eco-friendly cleaning service with booking form.',
+    tags: ['React', 'Vite', 'CSS Modules'],
     demo: '#',
   },
   {
@@ -32,6 +32,29 @@ const featured = [
     description: 'A RESTful API service with caching, rate limiting and full Docker support.',
     tags: ['Express', 'Redis', 'Docker'],
     demo: '#',
+  },
+]
+
+const reasons = [
+  {
+    icon: '⚡',
+    title: 'Fast Delivery',
+    desc: 'We move quickly without cutting corners. From kickoff to deployment, we keep things on track.',
+  },
+  {
+    icon: '🧹',
+    title: 'Clean Code',
+    desc: "Readable, maintainable, and scalable. We write code we're proud to hand off.",
+  },
+  {
+    icon: '💬',
+    title: 'Direct Communication',
+    desc: 'No middlemen. You talk directly to the developers building your product.',
+  },
+  {
+    icon: '🔧',
+    title: 'Full-Stack Coverage',
+    desc: 'Front-end to back-end, database to deployment — we handle the full picture.',
   },
 ]
 
@@ -104,6 +127,26 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section className="section">
+        <div className="sectionLabel">Why AEstack</div>
+        <div className="reasons-grid">
+          {reasons.map(r => (
+            <div key={r.title} className="reason-card">
+              <span className="reason-icon">{r.icon}</span>
+              <h3 className="reason-title">{r.title}</h3>
+              <p className="reason-desc">{r.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="cta-banner">
+        <h2>Ready to build something?</h2>
+        <p>We're available for new projects. Let's talk about what you have in mind.</p>
+        <Link to="/contact" className="btnPrimary">Start a conversation →</Link>
+      </section>
+
     </div>
   )
 }
