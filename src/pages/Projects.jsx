@@ -1,6 +1,6 @@
 import '/src/assets/css/projects.css'
 import dreamfilms from '../assets/img/dreamfilms.png'
-import purest from '../assets/img/purest.png'
+import purestt from '../assets/img/purest.png'
 
 const projects = [
   {
@@ -14,7 +14,7 @@ const projects = [
     title: 'PurEst',
     description: 'A multilingual landing page for an eco-friendly cleaning service. Features a French/English language switcher, smooth animations, and a booking form — built with a fully custom CSS design system.',
     tags: ['React', 'Vite', 'React Bootstrap', 'CSS Modules'],
-    image: purest,
+    image: purestt,
     demo: '#',
   },
   {
