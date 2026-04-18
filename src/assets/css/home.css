@@ -26,15 +26,6 @@
   text-transform: uppercase;
 }
 
-.badge::before {
-  content: '';
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #a855f7, #22d3ee);
-  flex-shrink: 0;
-}
-
 .hero h1 {
   font-size: clamp(28px, 5vw, 42px);
   font-weight: 500;

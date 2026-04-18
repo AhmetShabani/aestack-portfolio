@@ -55,7 +55,7 @@ const reasons = [
     icon: '🔧',
     title: 'Full-Stack Coverage',
     desc: 'Front-end to back-end, database to deployment — we handle the full picture.',
-  },
+  }
 ]
 
 export default function Home() {
@@ -122,7 +122,7 @@ export default function Home() {
               </div>
               <h3 className="featured-title">{project.title}</h3>
               <p className="featured-desc">{project.description}</p>
-              <a href={project.demo} className="featured-btn">Live Demo →</a>
+              <a href={project.demo} className="featured-btn" target="_blank">View Site →</a>
             </div>
           ))}
         </div>
@@ -144,7 +144,7 @@ export default function Home() {
       <section className="cta-banner">
         <h2>Ready to build something?</h2>
         <p>We're available for new projects. Let's talk about what you have in mind.</p>
-        <Link to="/contact" className="btnPrimary">Start a conversation →</Link>
+        <Link to="/contact" className="btnPrimary" target="_blank">Start a conversation →</Link>
       </section>
 
     </div>
