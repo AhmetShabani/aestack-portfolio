@@ -1,6 +1,6 @@
 import '/src/assets/css/projects.css'
 import dreamfilms from '../assets/img/dreamfilms.png'
-import purest from '../assets/img/purest.png'
+import purest from '../assets/img/pfr.png'
 
 const projects = [
   {
